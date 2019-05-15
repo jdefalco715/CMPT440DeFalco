@@ -7,7 +7,7 @@ public class testProgram{
 		System.out.println("Please insert more before confirming.");
 		System.out.println();
 
-		Float value = 0;
+		Double value = 0.00;
 
 		Meter m = new Meter(); //DFA
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));	// Standard input
@@ -18,12 +18,12 @@ public class testProgram{
 
 		while (s != "Enter" || s != "enter" && value <= 2) {
 		
-			if {s == "0.25" || s == ".25"} {
+			// This value algorithm is flawed, need to find solution
+			if (s == "0.25" || s == ".25") {
 				value = value + 0.25;
-			} else if {s == "0.50" || s == "0.5" || s == ".5"} {
+			} else if (s == "0.50" || s == "0.5" || s == ".5") {
 				value = value + 0.5;
-			} else
-				value = value;
+			} 
 		
 			// Runs process one state at a time
 			m.process(s);
